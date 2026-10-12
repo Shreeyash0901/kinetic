@@ -2,7 +2,7 @@ import { z } from "zod";
 import { isSafeLink } from "./linkUtils";
 
 export const BrandingSchema = z.object({
-  firmName: z.string().default("CA Rahul Sonule & Co."),
+  firmName: z.string().default("RDS & Associates"),
   tagline: z.string().default(""),
   registrationNumber: z.string().default("Firm Reg. No. XXXXXX"),
   phone: z.string().default("+91 00000 00000"),
@@ -133,7 +133,7 @@ export const FooterConfigSchema = z.object({
 });
 
 export const SeoConfigSchema = z.object({
-  siteTitle: z.string().max(60, "Site title max 60 characters").default("CA Rahul Sonule & Co. | Chartered Accountants"),
+  siteTitle: z.string().max(60, "Site title max 60 characters").default("RDS & Associates | Chartered Accountants"),
   metaDescription: z.string().max(160, "Meta description max 160 characters").default("Professional Tax, Audit, GST & Compliance Advisory for Modern Enterprises in India."),
   socialShareImageUrl: HttpsOnlyUrlSchema.optional(),
   noIndexInDraft: z.boolean().default(true),

@@ -17,7 +17,7 @@ export function getDefaultWebsiteConfig(firmId: string, templateId: TemplateId =
     version: 1,
     templateId,
     branding: {
-      firmName: "CA Rahul Sonule & Co.",
+      firmName: "RDS & Associates",
       tagline: "Chartered Accountants & Financial Advisors",
       registrationNumber: "Firm Reg. No. XXXXXX",
       phone: "+91 00000 00000",
@@ -69,7 +69,7 @@ export function getDefaultWebsiteConfig(firmId: string, templateId: TemplateId =
     },
     footer: {
       layout: "multi-column",
-      copyrightText: "© 2026 CA Rahul Sonule & Co. Chartered Accountants. All rights reserved.",
+      copyrightText: "© 2026 RDS & Associates Chartered Accountants. All rights reserved.",
       icaiDisclaimer: true,
       disclaimerText: "Standard Professional Disclaimer: In accordance with the Chartered Accountants Act, 1949 and guidelines issued by the regulatory council, this website is designed solely for providing informational facts about the firm and its areas of practice. It does not constitute an advertisement, personal communication, solicitation, or invitation to offer work.",
       quickLinkGroups: [
@@ -97,11 +97,11 @@ export function getDefaultWebsiteConfig(firmId: string, templateId: TemplateId =
       ],
     },
     seo: {
-      siteTitle: "CA Rahul Sonule & Co. | Chartered Accountants",
+      siteTitle: "RDS & Associates | Chartered Accountants",
       metaDescription: "Professional Tax, Audit, GST & Company Incorporation Advisory for Modern Enterprises in India.",
       socialShareImageUrl: "",
       noIndexInDraft: true,
-      metaTitle: "CA Rahul Sonule & Co. | Chartered Accountants",
+      metaTitle: "RDS & Associates | Chartered Accountants",
     },
     pages: [
       {

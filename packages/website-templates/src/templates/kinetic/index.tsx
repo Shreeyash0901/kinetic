@@ -89,7 +89,21 @@ export function KineticTemplate({ config }: KineticTemplateProps) {
           <a href="#home" className="kn-brand" style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
             {config.branding.logoUrl ? (
               <>
-                <img src={config.branding.logoUrl} alt={firm} style={{ maxHeight: 38, width: "auto", objectFit: "contain" }} />
+                <img
+                  src={config.branding.logoUrl}
+                  alt={firm}
+                  style={{
+                    maxHeight: 48,
+                    height: 48,
+                    width: "auto",
+                    objectFit: "contain",
+                    backgroundColor: "#ffffff",
+                    padding: "4px 8px",
+                    borderRadius: "6px",
+                    display: "inline-block",
+                    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.12)"
+                  }}
+                />
                 <span>{firm}</span>
               </>
             ) : (
@@ -362,7 +376,7 @@ function Calculators({ p }: { p: any }) {
 // ─── About Practice ──────────────────────────────────────────────────────────
 
 function About({ p, config }: { p: any; config: WebsiteConfig }) {
-  const firm = config.branding.firmName || "CA Rahul Sonule & Co.";
+  const firm = config.branding.firmName || "RDS & Associates";
   const stats = [
     { value: "15+", label: "Years of Practice", sub: "Serving Indian enterprises since 2009" },
     { value: "500+", label: "Active Retainers", sub: "Startups, SMEs & Private Limiteds" },
