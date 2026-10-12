@@ -215,7 +215,7 @@ export const SHARED_CLIENT_REVIEWS: SharedClientReview[] = [
 ];
 
 export const SHARED_FIRM_CONTACT: SharedFirmContact = {
-  primaryOffice: "101, Sample Business Hub, Financial District, Mumbai 400001",
+  primaryOffice: "S-2, Uma Smruti Apartment, Modi. No.1, Sitabuldi, Nagpur - 440024",
   email: "office@example-cafirm.com",
   phone: "+91 00000 00000",
   workingHours: "Monday to Saturday: 10:00 AM – 6:30 PM",

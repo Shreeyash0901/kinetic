@@ -2,12 +2,12 @@ import { z } from "zod";
 import { isSafeLink } from "./linkUtils";
 
 export const BrandingSchema = z.object({
-  firmName: z.string().default("CA Rahul Sonawane & Co."),
+  firmName: z.string().default("CA Rahul Sonule & Co."),
   tagline: z.string().default(""),
   registrationNumber: z.string().default("Firm Reg. No. XXXXXX"),
   phone: z.string().default("+91 00000 00000"),
   email: z.string().default("office@example-cafirm.com"),
-  address: z.string().default("101, Sample Business Hub, Financial District, Mumbai 400001"),
+  address: z.string().default("S-2, Uma Smruti Apartment, Modi. No.1, Sitabuldi, Nagpur - 440024"),
   workingHours: z.string().default("Mon – Sat: 10:00 AM – 6:30 PM"),
   logoUrl: z.string().optional().default(""),
   faviconUrl: z.string().optional().default(""),
@@ -133,7 +133,7 @@ export const FooterConfigSchema = z.object({
 });
 
 export const SeoConfigSchema = z.object({
-  siteTitle: z.string().max(60, "Site title max 60 characters").default("CA Rahul Sonawane & Co. | Chartered Accountants"),
+  siteTitle: z.string().max(60, "Site title max 60 characters").default("CA Rahul Sonule & Co. | Chartered Accountants"),
   metaDescription: z.string().max(160, "Meta description max 160 characters").default("Professional Tax, Audit, GST & Compliance Advisory for Modern Enterprises in India."),
   socialShareImageUrl: HttpsOnlyUrlSchema.optional(),
   noIndexInDraft: z.boolean().default(true),

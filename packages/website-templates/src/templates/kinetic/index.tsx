@@ -86,8 +86,15 @@ export function KineticTemplate({ config }: KineticTemplateProps) {
       <div className="kn-progress" style={{ transform: `scaleX(${progress / 100})` }} aria-hidden />
       <header className={`kn-header ${scrolled ? "scrolled" : ""}`}>
         <div className="kn-header-inner">
-          <a href="#home" className="kn-brand">
-            {config.branding.logoUrl ? <img src={config.branding.logoUrl} alt={firm} style={{ maxHeight: 32 }} /> : (<><span className="kn-logo" aria-hidden />{firm}</>)}
+          <a href="#home" className="kn-brand" style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
+            {config.branding.logoUrl ? (
+              <>
+                <img src={config.branding.logoUrl} alt={firm} style={{ maxHeight: 38, width: "auto", objectFit: "contain" }} />
+                <span>{firm}</span>
+              </>
+            ) : (
+              <><span className="kn-logo" aria-hidden />{firm}</>
+            )}
           </a>
           <nav className="kn-nav" aria-label="Main">
             <NavItems
@@ -355,7 +362,7 @@ function Calculators({ p }: { p: any }) {
 // ─── About Practice ──────────────────────────────────────────────────────────
 
 function About({ p, config }: { p: any; config: WebsiteConfig }) {
-  const firm = config.branding.firmName || "CA Rahul Sonawane & Co.";
+  const firm = config.branding.firmName || "CA Rahul Sonule & Co.";
   const stats = [
     { value: "15+", label: "Years of Practice", sub: "Serving Indian enterprises since 2009" },
     { value: "500+", label: "Active Retainers", sub: "Startups, SMEs & Private Limiteds" },
